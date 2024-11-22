@@ -1,0 +1,160 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* Header logo styles */
+/* Header for logo */
+
+.container {
+    position: relative; /* Enables absolute positioning inside */
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid #e63946;
+}
+
+/* Logo inside the container */
+.rival-logo {
+    position: absolute;
+    top: 20px; /* Distance from the top of the container */
+    right: 20px; /* Distance from the right of the container */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Makes it round */
+    border: 3px solid #e63946; /* Matches the theme */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    object-fit: cover; /* Ensures the image fits perfectly */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #e63946;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    border-bottom: 3px solid #e63946;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Form styles */
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e63946;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #fefefe;
+    color: #333;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #333;
+    box-shadow: 0 0 5px rgba(230, 57, 70, 0.8);
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+table th {
+    background-color: #e63946;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #ffe6e6;
+}
+
+/* Results summary */
+#summary-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 8px;
+    border: 2px solid #e63946;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#summary-container h2 {
+    color: #e63946;
+    margin-top: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+#summary-container form {
+    margin-bottom: 20px;
+}
+
+#discount-summary-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+#total-discount, #effective-discount {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Highlight elements for emphasis */
+.highlight {
+    color: #e63946;
+    font-weight: bold;
+}

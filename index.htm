@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Bracket Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://wzz.soundestlink.com/image/newsletter/64e773ee5b53ee937b4847c4" alt="Rival Boxing Logo" class="rival-logo">
+
+        <h1>Discount Bracket Calculator</h1>
+        <form id="discount-form">
+            <!-- Inputs for defining brackets -->
+            <label for="start-discount">Starting Discount (%)</label>
+            <input type="number" id="start-discount" step="0.01" placeholder="e.g., 5" required>
+        
+            <label for="max-discount">Maximum Discount (%)</label>
+            <input type="number" id="max-discount" step="0.01" placeholder="e.g., 20" required>
+        
+            <label for="num-brackets">Number of Brackets</label>
+            <input type="number" id="num-brackets" step="1" placeholder="e.g., 15" required>
+        
+            <label for="growth-rate">Growth Rate (k)</label>
+            <input type="number" id="growth-rate" step="0.01" placeholder="e.g., 0.1" required>
+        
+            <label for="first-range">First Range Upper Limit (CAD)</label>
+            <input type="number" id="first-range" step="1" placeholder="e.g., 7500" required>
+        
+            <label for="second-range">Second Range Upper Limit (CAD)</label>
+            <input type="number" id="second-range" step="1" placeholder="e.g., 15000" required>
+        
+            <button type="submit">Calculate Brackets</button>
+        </form>
+        
+        <!-- Overall Brackets Table -->
+        <h2>Overall Brackets</h2>
+        <table id="results-table">
+            <thead>
+                <tr>
+                    <th>Bracket</th>
+                    <th>Range (CAD)</th>
+                    <th>Discount Rate (%)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+        <!-- Discount Summary -->
+        <div id="summary-container">
+            <h2>Discount Summary</h2>
+            <form id="amount-form">
+                <label for="amount">Enter Amount (CAD)</label>
+                <input type="number" id="amount" step="1" placeholder="e.g., 50000" required>
+                <button type="submit">Calculate Discounts</button>
+            </form>
+            <table id="discount-summary-table">
+                <thead>
+                    <tr>
+                        <th>Bracket</th>
+                        <th>Applicable Amount (CAD)</th>
+                        <th>Discount Rate (%)</th>
+                        <th>Discount Amount (CAD)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <p id="total-discount"></p>
+            <p id="effective-discount"></p>
+        </div>
+        
+        
+                
+    <script src="script.js"></script>
+</body>
+</html>
